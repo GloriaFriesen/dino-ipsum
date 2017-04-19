@@ -4,13 +4,25 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="build/css/styles.css">
-    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title></title>
   </head>
   <body>
-    <h1>Dinos</h1>
-    <button id="dinoButton">Generate Dino Ipsum</button>
+    <div class="container">
+      <h1>Dinos</h1>
+        <form id="dinoForm">
+          <div class="group-form">
+            <label for="paragraphs">Number of Paragraphs:</label>
+            <input type="text" class="form-control" name="paragraphs" id="paragraphs">
+          </div>
+          <div class="group-form">
+            <label for="words">Words per Paragraphs:</label>
+            <input type="text" class="form-control" name="words" id="words">
+          </div>
+          <button type="submit" id="dinoButton" class="btn btn-success">Generate Dino Ipsum</button>
+        </form>
     <h4 class id="dinoIpsum"></h4>
+    </div>
   </body>
 </html>
