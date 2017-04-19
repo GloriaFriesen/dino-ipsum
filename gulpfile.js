@@ -13,7 +13,7 @@ var sourcemaps = require('gulp-sourcemaps');
 
 
 gulp.task('concatInterface', function() {
-  return gulp.src(['./js/weather-interface.js'])
+  return gulp.src(['./js/*-interface.js'])
     .pipe(concat('allConcat.js'))
     .pipe(gulp.dest('./tmp'));
 });
